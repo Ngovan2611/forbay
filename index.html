@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Happy_birthday</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="main.js"></script>
+        </head>
+    <body>
+       
+        <div class="happy">
+            <span><img src="/Templates/—Pngtree—sunflower yellow flower plant petals_6342842.png" alt="" class="gif"></span>
+            <strong><center><h1>Happy_birthday</h1></center></strong></div>
+        <div class="boxheart">
+            <div class="heart"><h1>Click_here</h1></div>
+            <div class="beat"></div>
+        </div>
+        <div class="boxchoose">
+            <img src="/Templates/image-from-rawpixel-id-5997914-png.png" alt="" class="gif">
+            <strong><h2>Mua t cái máy ảnh nhá</h2></strong>
+            <div class="listbutton">
+                <button id="no">NO "Lêu lêu"</button>
+                <button id="yes">Mua 10 cái</button>
+                <div class="image"><div>
+                    <video controls>
+                        <source src="/Templates/202403191746.mp4" autoplay>
+                    </video>
+                </div></div>
+            </div>
+        </div>
+        <div class="popup">
+            <div class="inner">
+                <h3>Happy birthday to Pham Quynh Chi</h3>
+                <img src="https://images.unsplash.com/photo-1464349153735-7db50ed83c84?q=80&w=1564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="anh" />
+                <p>Chúc bay sang tuổi mới càng xinh đẹp!!!
+                    học hành chăm chỉ và <span>NHỚ</span> mua máy ảnh cho t!!!!</p>
+                    <a href="https://drive.google.com/file/d/1ExZt2bsASzUS7nIYTTSwdpfS2OfTsqC-/view?usp=drivesdk">Click_here</a> or
+                <a href="https://drive.google.com/file/d/1EzCd7v7v1y7XaATq41DRQSmBUfUEn1NI/view?usp=drivesdk">Here</a></h3>
+
+                <div class="au">
+                    <audio controls>
+                        <source src="/Templates/Snaptik.app_7226761992571227393 (audio-extractor.net) (1).mp3" autoplay>
+                    </audio>
+                </div>
+            </div>
+        </div>
+        <script>
+            const noBtn = document.querySelector("#no");
+            const yesBtn = document.querySelector("#yes");
+            let boxheart = document.querySelector(".boxheart");
+            let boxchoose = document.querySelector(".boxchoose");
+            let popup = document.querySelector(".popup");
+            boxheart.addEventListener("click", function () {
+                boxheart.classList.add("active");
+                boxchoose.classList.add("active");
+            });
+            yesBtn.addEventListener("click", function () {
+                popup.classList.add("active");
+            });
+            noBtn.addEventListener("mouseenter", () => {
+                const top = Math.floor(Math.random() * window.innerHeight);
+                const left = Math.floor(Math.random() * window.innerWidth);
+
+                noBtn.style.top = `${top}px`;
+                noBtn.style.left = `${left}px`;
+            });
+        </script>
+    </body>
+</html>
